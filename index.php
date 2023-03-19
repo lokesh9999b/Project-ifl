@@ -4,7 +4,7 @@
  {
 	$user=$_POST['username'];
 	$pass=$_POST['pwd'];
-	$query=$con->prepare("select name,desig,photo from admin where (uname=? and password=?)");
+	$query=$con->prepare("select name,desig,photo from admin where (uname=? and pwd=?)");
 	$query->bind_param("ss",$user,$pass);
 	$query->execute();
 	$query->bind_result($name,$desig,$photo);
@@ -13,27 +13,28 @@
 
 	if($details)
      {
-		if($desig=='staff')
+		if($desig=='MANAGING DIRECTOR')
 		{
-			$_SESSION['NAME']=$name;
-        $_SESSION['DEG']=$design;
-        $_SESSION['photo']=$photo;
-		echo" <script>document.location='staff-dashboard.php'</script>";
-		}
-		else{
-        $_SESSION['name']=$name;
+			$_SESSION['name']=$name;
         $_SESSION['deg']=$desig;
-        $_SESSION['photo']=$photo;	
-      
-        echo" <script>document.location='dashboard.php'</script>";
-		}
-     }
-     else 
-     {
-     echo "<script>	<button id='default-error' class='mt-3 mb-3 btn btn-danger'>Error</button></script>";
+        $_SESSION['photo']=$photo; 
 
-    }
- }
+
+		echo "<script>document.location='login.php'</script";
+		}  
+		
+}
+else 
+      {
+        // echo "<script>alert('password is incorrect')</script>";
+		echo "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+		<strong>Password or User name is incorrect.</strong> <a href='' class='alert-link'></a> 
+		<button type='button' class='btn-close' data-bs-dismiss='alert' aria-hidden='true' aria-label='Close'></button>
+	</div>";
+
+      } 
+}
+ 
  ?>
 
 
@@ -70,14 +71,14 @@
 		<section class="body-sign">
 			<div class="center-sign">
 				<a href="/" class="logo float-start">
-					<img src="img/logo.png" height="70" alt="Porto Admin">
+					<img src="img/ifl-logo.jpg" height="70" alt="Porto Admin">
 				</a>
 				<div class="panel card-sign">
 					<div class="card-title-sign mt-3 text-end">
-						<h2 class="title text-uppercase font-weight-bold m-0"><i class="bx bx-user-circle me-1 text-6 position-relative top-5"></i> Sign In</h2>
+						<h2 class="title text-uppercase font-weight-bold m-0"><i class="bx bx-user-circle me-1 text-6 position-relative top-5"></i> Log In</h2>
 					</div>
 					<div class="card-body">
-						<form action="index.html" method="post">
+						<form method="POST">
 							<div class="form-group mb-3">
 								<label>Username</label>
 								<div class="input-group">
@@ -107,7 +108,7 @@
 									</div>
 								</div> -->
 								<div class="col-sm-7   text-end">
-									<button type="submit" class="mb-1 mt-1 me-1 btn btn-info">Sign In</button>
+									<button name="submit" class="mb-1 mt-1 me-1 btn btn-success">Sign In</button>
 								</div>
 							</div>
 							<!-- <span class="mt-3 mb-3 line-thru text-center text-uppercase">
@@ -122,6 +123,8 @@
 					</div>
 				</div>
 				<p class="text-center text-muted mt-3 mb-3">&copy; Copyright 2021. All Rights Reserved.</p>
+				<p class="text-center text-muted mt-3 mb-3">Ifl Green Pvt limited</p>
+
 			</div>
 		</section>
 		<!-- end: page -->
