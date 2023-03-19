@@ -1,0 +1,1 @@
+(function($){'use strict';$(function(){var $el=$('#LoadingOverlayApi');$('#ApiShowOverlay').click(function(){$el.trigger('loading-overlay:show');});$('#ApiHideOverlay').click(function(){$el.trigger('loading-overlay:hide');});});}).apply(this,[jQuery]);

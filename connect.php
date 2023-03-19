@@ -1,8 +1,8 @@
 <?php
-  $con=new mysqli('localhost','lokesh','Lokesh@999','ifl');
+  $con=new mysqli('localhost','root','','ifl');
 
   if(!$con)
   {
-    die(mysqli_error());
+    echo"error";
   }
   ?>
