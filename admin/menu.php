@@ -17,70 +17,52 @@
 				                            <span>Dashboard</span>
 				                        </a>                        
 				                    </li>
+									<!-- <li>
+				                        <a class="nav-link" href="emp_update.php">
+				                            <i class="bx bx-home-alt" aria-hidden="true"></i>
+				                            <span>Update Employee Details</span>
+				                        </a>                        
+				                    </li> -->
 				                    <li class="nav-parent">
 				                        <a class="nav-link" href="#">
 				                            <i class="bx bx-cart-alt" aria-hidden="true"></i>
-				                            <span>eCommerce</span>
+				                            <span>Branches</span>
 				                        </a>
 				                        <ul class="nav nav-children">
 				                            <li>
-				                                <a class="nav-link" href="ecommerce-dashboard.html">
-				                                    Dashboard
+				                                <a class="nav-link" href="raj.php">
+				                                    Rajamundry
 				                                </a>
 				                            </li>
 				                            <li>
-				                                <a class="nav-link" href="ecommerce-products-list.html">
-				                                    Products List
+				                                <a class="nav-link" href="khammam.php">
+				                                    Khammam
 				                                </a>
 				                            </li>
 				                            <li>
-				                                <a class="nav-link" href="ecommerce-products-form.html">
-				                                    Products Form
+				                                <a class="nav-link" href="kothagudem.php">
+				                                    Kothagudem
 				                                </a>
 				                            </li>
 				                            <li>
-				                                <a class="nav-link" href="ecommerce-category-list.html">
-				                                    Categories List
+				                                <a class="nav-link" href="jrg.php">
+				                                    Jangareddygudem
 				                                </a>
 				                            </li>
 				                            <li>
-				                                <a class="nav-link" href="ecommerce-category-form.html">
-				                                    Category Form
+				                                <a class="nav-link" href="manuguru.php">
+				                                    Manuguru
 				                                </a>
 				                            </li>
-				                            <li>
-				                                <a class="nav-link" href="ecommerce-coupons-list.html">
-				                                    Coupons List
-				                                </a>
-				                            </li>
-				                            <li>
-				                                <a class="nav-link" href="ecommerce-coupons-form.html">
-				                                    Coupons Form
-				                                </a>
-				                            </li>
-				                            <li>
-				                                <a class="nav-link" href="ecommerce-orders-list.html">
-				                                    Orders List
-				                                </a>
-				                            </li>
-				                            <li>
-				                                <a class="nav-link" href="ecommerce-orders-detail.html">
-				                                    Orders Detail
-				                                </a>
-				                            </li>
-				                            <li>
-				                                <a class="nav-link" href="ecommerce-customers-list.html">
-				                                    Customers List
-				                                </a>
-				                            </li>
-				                            <li>
-				                                <a class="nav-link" href="ecommerce-customers-form.html">
-				                                    Customers Form
-				                                </a>
-				                            </li>
+				                           
 				                        </ul>
 				                    </li>
-				                    
+									<li>
+				                        <a class="nav-link" href="day_wise.php">
+				                            <i class="bx bx-home-alt" aria-hidden="true"></i>
+				                            <span>Day Wise Report </span>
+				                        </a>                        
+				                    </li>
 				        </div>
 				        <script>
 				            // Maintain Scroll Position
